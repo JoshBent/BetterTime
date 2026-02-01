@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <Name value="Better Time" />
+  <Id value="BetterTime" />
+  <Version value="v1.0.0" />
+  <Official value="false" />
+  <DefaultModule value="false" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/2849" />
+  <DependedModules>
+    <DependedModule Id="Native" DependentVersion="v1.2.12" />
+    <DependedModule Id="SandBoxCore" DependentVersion="v1.2.12" />
+    <DependedModule Id="Sandbox" DependentVersion="v1.2.12" />
+    <DependedModule Id="StoryMode" DependentVersion="v1.2.12" Optional="true" />
+    <DependedModule Id="Bannerlord.Harmony" />
+    <DependedModule Id="Bannerlord.UIExtenderEx" />
+    <DependedModule Id="Bannerlord.MBOptionScreen" />
+  </DependedModules>
+  <DependedModuleMetadatas>
+    <!-- Game modules -->
+    <DependedModuleMetadata id="Native" order="LoadBeforeThis" version="v1.2.12" />
+    <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="v1.2.12" />
+    <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="v1.2.12" />
+    <DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="v1.2.12" optional="true" />
+    <DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" optional="true" />
+    <!-- Mod dependencies -->
+    <DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis" />
+    <DependedModuleMetadata id="Bannerlord.UIExtenderEx" order="LoadBeforeThis" />
+    <DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" />
+  </DependedModuleMetadatas>
+  <SubModules>
+    <SubModule>
+      <Name value="BetterTime" />
+      <DLLName value="BetterTime.dll" />
+      <SubModuleClassType value="BetterTime.Main" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+</Module>
